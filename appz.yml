@@ -4,7 +4,7 @@ app:
   notify: apsuresh@ecloudcontrol.com
 
 build:
-  version: 4.2
+  version: 4.2a
   env: DEV
   build_file: none
   output_files: output/*.zip
@@ -13,7 +13,7 @@ build:
 deploy:
   context: justathul/DEV
   type: statefulset
-  replicas: 3
+  replicas: 1
   port:
   - 27017
 
