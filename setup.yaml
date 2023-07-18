@@ -1,0 +1,11 @@
+users:
+  - name: ashieldmon
+    password: $MONGO_USER_PASSWORD
+
+databases:
+  - name: AShieldClickless
+
+acl:
+  - database: AShieldClickless
+    user: ashieldmon
+    access: dbOwner
