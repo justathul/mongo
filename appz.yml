@@ -13,7 +13,7 @@ build:
 deploy:
   context: justathul/DEV
   type: statefulset
-  replicas: 3
+  replicas: 2
   port:
   - 27017
 
@@ -44,7 +44,7 @@ properties:
     vault: MONGO_USER_PASSWORD
   AUTH_KEY: 
     vault: AUTH_KEY
-  REPLICATION: 3
+  REPLICATION: 2
   
   MONGODB_HOST: 127.0.0.1
   MONGODB_PORT: 27017
